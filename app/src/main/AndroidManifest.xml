@@ -3,10 +3,12 @@
     package="com.commonsware.empublite" >
 
     <supports-screens
-        android:xlargeScreens="true"
         android:largeScreens="true"
         android:normalScreens="true"
-        android:smallScreens="false"/>
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="false"
@@ -22,8 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SimpleContentActivity"></activity>
     </application>
 
-    <uses-permission
-        android:name="android.permission.INTERNET"/>
 </manifest>
