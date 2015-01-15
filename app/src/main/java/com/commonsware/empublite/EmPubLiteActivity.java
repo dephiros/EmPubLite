@@ -6,16 +6,22 @@ import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 public class EmPubLiteActivity extends Activity {
     private ViewPager pager = null;
+    private ContentsAdapter adapter = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         pager = (ViewPager) findViewById(R.id.pager);
+        adapter = new ContentsAdapter(this);
+        pager.setAdapter(adapter);
+        findViewById(R.id.progressBar).setVisibility(View.GONE);
+        findViewById(R.id.pager).setVisibility(View.VISIBLE);
     }
 
     @Override
