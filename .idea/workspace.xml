@@ -26,7 +26,6 @@
   <component name="ChangeListManager">
     <list default="true" id="91fb4cc0-24c5-4f46-a707-ac72dff3b1f4" name="Default" comment="Remove webview from main activity view resource and add view pager&#10;">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/commonsware/empublite/ContentsAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/commonsware/empublite/EmPubLiteActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/commonsware/empublite/EmPubLiteActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="EmPubLite.iws" />
@@ -1197,7 +1196,11 @@
       <created>1421304119050</created>
       <updated>1421304119050</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Remove webview from main activity&#10;Add new pagerview&#10;">
+      <created>1421304601275</created>
+      <updated>1421304601275</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1254,7 +1257,8 @@
     <MESSAGE value="Add simple content activity for help, about" />
     <MESSAGE value="Set up a simple content fragment" />
     <MESSAGE value="Remove webview from main activity view resource and add view pager&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove webview from main activity view resource and add view pager&#10;" />
+    <MESSAGE value="Remove webview from main activity&#10;Add new pagerview&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove webview from main activity&#10;Add new pagerview&#10;" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
