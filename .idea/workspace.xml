@@ -24,8 +24,8 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.commonsware.empublite" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91fb4cc0-24c5-4f46-a707-ac72dff3b1f4" name="Default" comment="Added BookContents and ModelFragment for holding the book">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/commonsware/empublite/BookLoadedEvent.java" />
+    <list default="true" id="91fb4cc0-24c5-4f46-a707-ac72dff3b1f4" name="Default" comment="Added BookLoadedEvent to signify to main activity when book is finished loaded">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/commonsware/empublite/ModelFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/commonsware/empublite/ModelFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="EmPubLite.iws" />
@@ -71,13 +71,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModelFragment.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ModelFragment.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/commonsware/empublite/ModelFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="324">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.540146" vertical-offset="784" max-vertical-offset="1386">
+              <caret line="60" column="70" selection-start-line="60" selection-start-column="70" selection-end-line="60" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#930#931#0" expanded="true" />
+                <element signature="e#961#962#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,10 +102,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookLoadedEvent.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BookLoadedEvent.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/commonsware/empublite/BookLoadedEvent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4270073" vertical-offset="0" max-vertical-offset="548">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
               <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
               <folding>
                 <element signature="e#198#199#0" expanded="true" />
@@ -867,9 +869,9 @@
         <option value="$PROJECT_DIR$/app/src/main/assets/misc/help.html" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/commonsware/empublite/SimpleContentActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/commonsware/empublite/EmPubLiteActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/commonsware/empublite/ModelFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/commonsware/empublite/BookContents.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/commonsware/empublite/BookLoadedEvent.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/commonsware/empublite/ModelFragment.java" />
       </list>
     </option>
   </component>
@@ -1287,7 +1289,11 @@
       <created>1423450604253</created>
       <updated>1423450604253</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added BookLoadedEvent to signify to main activity when book is finished loaded">
+      <created>1423450768757</created>
+      <updated>1423450768757</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1347,7 +1353,8 @@
     <MESSAGE value="Remove webview from main activity&#10;Add new pagerview&#10;" />
     <MESSAGE value="Add new content adapter but leave most method empty for now" />
     <MESSAGE value="Added BookContents and ModelFragment for holding the book" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added BookContents and ModelFragment for holding the book" />
+    <MESSAGE value="Added BookLoadedEvent to signify to main activity when book is finished loaded" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added BookLoadedEvent to signify to main activity when book is finished loaded" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1716,16 +1723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/commonsware/empublite/ModelFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="324">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/commonsware/empublite/BookContents.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="612">
@@ -1743,13 +1740,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/commonsware/empublite/BookLoadedEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4270073" vertical-offset="0" max-vertical-offset="548">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
           <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
           <folding>
             <element signature="e#198#199#0" expanded="true" />
             <element signature="e#238#239#0" expanded="true" />
             <element signature="e#275#276#0" expanded="true" />
             <element signature="e#311#312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/commonsware/empublite/ModelFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.540146" vertical-offset="784" max-vertical-offset="1386">
+          <caret line="60" column="70" selection-start-line="60" selection-start-column="70" selection-end-line="60" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#961#962#0" expanded="true" />
           </folding>
         </state>
       </provider>
